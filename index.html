@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -72,6 +73,22 @@
 			margin-left: 50%;
 			transform: translate(-50%, 0);
 		}
+		input{
+			position: absolute;
+			display: block;
+			top: 51.5%;
+			margin-left: 75%;
+			transform: translate(-50%, 0);
+
+			border: 1px white solid;
+			width: 500px;
+			height: auto;
+			padding: 5px;
+			color: #0ced00;
+			cursor: pointer;
+			border-radius: 5px;
+			background-color: rgba(0,0,0, .7);
+		}
 	</style>
 </head>
 <body>
@@ -82,7 +99,7 @@ alert("Abra por um computador, resolução não feita para smartphones!");
 	<section>
 		<header>
 			<p></p>
-		</header>
+		</header >
 		<ul>
 			<li><a href="https://drive.google.com/uc?id=1t-huZsyxo1anvO4XBfBBQwU-JrlKQjrP&export=download"target="_blank">Corel Draw X8 + Crack</li>      </a>     
 			<li><a href="https://mega.nz/#!GA1SiIRQ!0xI2pdNd9pFZPKP8qJCQgmy9YDDWLVQGUWQ1P55UXAU"target="_blank">Office 19 + Crack</li>          </a>       
@@ -109,13 +126,44 @@ alert("Abra por um computador, resolução não feita para smartphones!");
 	    <li><a href="http://download2345.mediafire.com/cxbdpgi9c5pg/3urj7zxdhm1me8r/VEGAS+PRO+17.0.0.284.rar"target="_blank">VEGAS+PRO+17.0.0.284</a></li>
 		</ul>
 	</section>
+
+
+
+
 	<li onclick="vai()" id="whats">Gerar link Whatsapp</li>
+
+	<input type="text" id="urlPta" value="hhhhhhhhhhhhhhhhhh">
+
+
+
 	<script type="text/javascript">
   		function vai() {
  		var gerarUrl = prompt('Qual o seu Telefone? Com DDD, krai');
-  		alert('https://api.whatsapp.com/send?phone=55' + gerarUrl );
+
+ 		var vaurlPta = "https://api.whatsapp.com/send?phone=55" + gerarUrl;
+
+ 		document.getElementById("urlPta").value = vaurlPta;
+  		
   	}
 	</script>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+	$(function(){
+		$("#urlPta").click(function(){
+			$(this).select()
+			document.execCommand("copy");
+		})
+	})
+</script>
+
+
+
+
+
+
+
+
 	<div class="alex"><a href="https://www.instagram.com/allex_r.souza/" target="_blank">🅰🅻🅴🆇</a></div>
 </body>
 </html>
