@@ -15,6 +15,7 @@
   			position: absolute;
   			height: 100%;
   			background-color: black;
+  			text-align: center;
 
 		}
 		section{
@@ -64,6 +65,13 @@
 			transform: translate(0,-100%);
 			font-size: 17pt;
 		}
+		#whats{
+			position: absolute;
+			display: block;
+			top: 50%;
+			margin-left: 50%;
+			transform: translate(-50%, 0);
+		}
 	</style>
 </head>
 <body>
@@ -101,6 +109,13 @@ alert("Abra por um computador, resolução não feita para smartphones!");
 	    <li><a href="http://download2345.mediafire.com/cxbdpgi9c5pg/3urj7zxdhm1me8r/VEGAS+PRO+17.0.0.284.rar"target="_blank">VEGAS+PRO+17.0.0.284</a></li>
 		</ul>
 	</section>
+	<li onclick="vai()" id="whats">Gerar link Whatsapp</li>
+	<script type="text/javascript">
+  		function vai() {
+ 		var gerarUrl = prompt('Qual o seu Telefone? Com DDD, krai');
+  		alert('https://api.whatsapp.com/send?phone=55' + gerarUrl );
+  	}
+	</script>
 	<div class="alex"><a href="https://www.instagram.com/allex_r.souza/" target="_blank">🅰🅻🅴🆇</a></div>
 </body>
 </html>
