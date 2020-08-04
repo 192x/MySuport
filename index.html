@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -66,40 +67,48 @@
 			transform: translate(0,-100%);
 			font-size: 17pt;
 		}
-		#whats{
+		
+		.caixa{
 			position: absolute;
 			display: block;
+			background-color: transparent;
+			width: 99.8%;
+			height: auto;
 			top: 50%;
-			margin-left: 50%;
-			transform: translate(-50%, 0);
+			transform: translate(0,-50% );
+			padding: 0;
+			border-radius: 5px;
+			background-color: rgba(0,0,0, .7);
 		}
-		input{
-			position: absolute;
-			display: block;
-			top: 51.5%;
-			margin-left: 75%;
-			transform: translate(-50%, 0);
-
-			border: 1px white solid;
-			width: 500px;
+		hgroup input , button {
+			width: auto;
 			height: auto;
 			padding: 5px;
+			margin:10px;
 			color: #0ced00;
 			cursor: pointer;
 			border-radius: 5px;
 			background-color: rgba(0,0,0, .7);
 		}
+		#urlPta{
+			width: 420px;
+		}
+		legend{
+			color: #0ced00;
+			width: 300px;
+			font-size: 13pt;
+		}
 	</style>
 </head>
 <body>
 	<script type="text/javascript">
-alert("Abra por um computador, resolução não feita para smartphones!");
+/*alert("Abra por um computador, resolução não feita para smartphones!");*/
 </script>
 	</script>
 	<section>
 		<header>
 			<p></p>
-		</header >
+		</header>
 		<ul>
 			<li><a href="https://drive.google.com/uc?id=1t-huZsyxo1anvO4XBfBBQwU-JrlKQjrP&export=download"target="_blank">Corel Draw X8 + Crack</li>      </a>     
 			<li><a href="https://mega.nz/#!GA1SiIRQ!0xI2pdNd9pFZPKP8qJCQgmy9YDDWLVQGUWQ1P55UXAU"target="_blank">Office 19 + Crack</li>          </a>       
@@ -123,34 +132,41 @@ alert("Abra por um computador, resolução não feita para smartphones!");
             <li><a href="https://mega.nz/file/uOJUVKLZ#TSXrKIBo78eQNTEuF_fge9nuGmO4KP6KLnzakcQDBCI"target="_blank">Utorrent</li>                   </a>
             <li><a href="https://mega.nz/folder/CToH1AYQ#sSIdGB6vgDnynEbNGD1cgQ"target="_blank">Allavsoft + Ativador</a></li>
             <li><a href="remover.bat"target="_blank">Script Office remover</a></li>
-	    <li><a href="https://drive.google.com/u/0/uc?export=download&confirm=Af1c&id=1owJ1B1owZZyY5aZRw0uGQW8Cw-9BkRwz"target="_blank">Script Office remover</a></li>
+	    <li><a href="https://drive.google.com/u/0/uc?export=download&confirm=Af1c&id=1owJ1B1owZZyY5aZRw0uGQW8Cw-9BkRwz"target="_blank">Retirar senha de user, win7</a></li>
 	    <li><a href="https://linuxtracker.org/index.php"target="_blank">ISO's Linux</a></li>
 	    <li><a href="http://download2345.mediafire.com/cxbdpgi9c5pg/3urj7zxdhm1me8r/VEGAS+PRO+17.0.0.284.rar"target="_blank">VEGAS+PRO+17.0.0.284</a></li>
 		</ul>
 	</section>
 
 
-
-
-	<li onclick="vai()" id="whats">Gerar link Whatsapp</li>
-
-	<input type="text" id="urlPta" value="hhhhhhhhhhhhhhhhhh">
+<hgroup class="caixa">
+		<fieldset class="caixa"> <legend>Gere seu link para um contato whatsapp</legend>
+			<input type="text" id="entraNum" value="(DDD)0 0000-0000">
+			<button onclick="vai()" id="whats">Gerar link Whatsapp</button>
+			<input type="text" id="urlPta" value="Pegue seu link">
+		</fieldset>
+	</hgroup>
 
 
 
 	<script type="text/javascript">
   		function vai() {
- 		var gerarUrl = prompt('Qual o seu Telefone? Com DDD, krai');
+ 		var gerarUrl = document.getElementById("entraNum").value /*prompt('Qual o seu Telefone? Com DDD, krai');*/
 
  		var vaurlPta = "https://api.whatsapp.com/send?phone=55" + gerarUrl;
 
  		document.getElementById("urlPta").value = vaurlPta;
-  		
   	}
 	</script>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script>
+	$(function(){
+		$("#entraNum").click(function(){
+			$(this).select()
+			document.execCommand("copy");
+		})
+	})
 	$(function(){
 		$("#urlPta").click(function(){
 			$(this).select()
@@ -158,14 +174,6 @@ alert("Abra por um computador, resolução não feita para smartphones!");
 		})
 	})
 </script>
-
-
-
-
-
-
-
-
 	<div class="alex"><a href="https://www.instagram.com/allex_r.souza/" target="_blank">🅰🅻🅴🆇</a></div>
 </body>
 </html>
