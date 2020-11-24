@@ -170,25 +170,50 @@
 			border-top: 1px solid #02FAFD;
 			width: auto;
 			padding: 5px;
+			padding-bottom: 10px;
 		}
 		.alex a{
 			color: #02FAFD;
 			font-size: 15pt;
 		}
+
+		.caixa2{
+			border: 1px solid black;
+			position: relative;
+			display: block;
+			top: 20px;
+		}
+		#entraPgm{
+			position: relative;
+			display: inline-block;
+			width: 70%;
+		}
+		#whats2{
+			position: relative;
+    			display: inline-block;
+    			border-radius: 6px;
+    			height: 32px;
+   			 text-align: center;
+   			 margin: .8%;
+   			 border: 2px rgba(0,0,0, .3) solid;
+   			 width: auto;
+   			 padding: .8%;
+   			 font-family: futura BK BT black;
+   			 color: #02FAFD;
+   			 background-color: #33278D;
+  			  border: none;
+		}
 	</style>
 </head>
 <body>
-	<!--<figure class="eu">
-		<img src="eu.png">
-		<figcaption id="nome">Alex Souza</figcaption>
-	</figure>-->
 	<hgroup class="caixa">
 			<fieldset class="caixa"> <legend>Gere seu link para um contato whatsapp</legend>
 				<input type="text" id="entraNum" placeholder="(00)0 0000-0000">
-				<button onclick="vai()" id="whats">Gerar link Whatsapp</button>
-				<input type="text" id="urlPta" placeholder="Pegue seu link">
+				<input type="text" id="msgOpc" placeholder="Mensagem opcional">
+				<button onclick="vai()" id="whats">Gere e abra seu link</button>
 			</fieldset>
 	</hgroup>
+
 	<article class="cont">
 		<ul>
 			<li>Corel Draw X8 +Crack<a href="https://drive.google.com/uc?id=1t-huZsyxo1anvO4XBfBBQwU-JrlKQjrP&export=download"target="_blank"><span>Download</span></a></li>           
@@ -228,34 +253,31 @@
 			<li>PDF - Formatação Mobile<a href="Software Mobile.pdf" target="_blank"><span>Ver</span></a></li>
 		</ul>
 	</article>
-	<article class="cont">
-		<ul class="a001">
-			<li >Saber meu numero > 0800 643 0424</li>
-			<li >OBS: O Youtube requer o iOS 11.0 ou posterior, assim como diversas outras aplicações da Google</li>
-			<li >$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$</li>
-			<li >$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$</li>
-			<li >$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$</li>
-			<li >$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$</li>
-			<li >$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$</li>
-			<li >$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$</li>
-			<li >$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$</li>
-			<li >$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$</li>
-			<li >$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$</li>
-			<li >$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$</li>
-			<li >$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$</li>
-		</ul>
+
+	<article class="cont2">
+
+		<hgroup class='caixa2'>
+			<fieldset class="capPgm"> <legend>Indique um Programa</legend>
+				<input type="text" id="entraPgm" placeholder="Nome do Programa">
+				<button onclick="envPg()" id="whats2">Enviar Programa</button>
+			</fieldset>
+		</hgroup>
+
 	</article>
+
 	<script type="text/javascript">
   		function vai() {
  		var gerarUrl = document.getElementById("entraNum").value /*prompt('Qual o seu Telefone? Com DDD, krai');*/
-
- 		var vaurlPta = "https://api.whatsapp.com/send?phone=55" + gerarUrl;
-
- 		document.getElementById("urlPta").value = vaurlPta;
+ 		var mesgOpc = document.getElementById("msgOpc").value
+ 		var vaurlPta = "https://api.whatsapp.com/send?phone=55" + gerarUrl + '&text=' + mesgOpc;
+ 		window.open(vaurlPta);
   	}
 	</script>
 
+
+
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
 	<script>
 	$(function(){
 		$("#entraNum").click(function(){
@@ -268,6 +290,15 @@
 			document.execCommand("copy");
 		})
 	})
+	</script>
+
+	<script type="text/javascript">
+		function envPg() {
+			var pegaNome = document.getElementById('entraPgm').value
+			var montUrl = 'https://api.whatsapp.com/send?phone=5562982631109&text=' + pegaNome;
+			window.open(montUrl);
+		}
+
 	</script>
 	<div class="alex"><a href="https://www.instagram.com/allex_souza.r/" target="_blank">Desenvolvido por @allex_souza.r</a></div>
 </body>
