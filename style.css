@@ -7,7 +7,7 @@
 body{
     background-color:#ddd;
 }
-/*cabecalho + cont principal*/
+/*cabecalho + cont principal ---------*/
 #scorpions{
     display: block;
     position: relative;
@@ -82,7 +82,7 @@ body{
     color: #33278D;
     background-color: #02FAFD;
 }
-/*subMenu*/
+/*subMenu ---------------------------*/
 #subMenu{
     display: block;
     position: relative;
@@ -116,8 +116,9 @@ body{
     width: 100%;
     margin: 0 auto;
     top: 5px;
-    background-color:rgba(0, 0, 0, 0.275);
+    background-color:white;
     border-radius: 8px;
+    border: 1px solid #33278D;
 }
 #ulistPgms{
     display: flex;
@@ -125,21 +126,21 @@ body{
 }
 #ulistPgms li{
     flex: 1 1 200px;
-    border: 2px solid rgb(49, 49, 49);
+    border: 2px solid #33278D;
     text-align: center;
     margin: 5px;
     border-radius: 5px;
     font-family: sans-serif;
     font-weight: bolder;
     padding-top: 5px;
-    color:rgb(49, 49, 49);
-    background-color:#0000003a;
+    color: #33278D;
+    background-color: #02FAFD ;
 }
 #ulistPgms li span{
     position: relative;
     display: block;
     width: 100%;
-    background-color:rgb(49, 49, 49);
+    background-color:#33278D;
     color:white;
     font-family: sans-serif;
     font-weight: bolder;
@@ -147,7 +148,7 @@ body{
 a{
     text-decoration: none;
 }
-/*dicasssssssssssss s s s ssssssssssssssssss*/
+/*dicassssssssssssssssssssssssssssssss*/
 #dicasInfo{
     width: 100%;
     display: block;
