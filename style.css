@@ -148,6 +148,20 @@ body{
 a{
     text-decoration: none;
 }
+.cods{
+    color: red;
+}
+#ulistPgms h2{
+    display: block;
+    position: relative;
+    width: 100%;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 120%;
+    text-align: center;
+    margin-top: 8px;
+    color: #33278D;
+}
 /*dicassssssssssssssssssssssssssssssss*/
 #dicasInfo{
     width: 100%;
