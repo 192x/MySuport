@@ -59,32 +59,21 @@
 			        <li>PDF - Formatação Mobile<a href="Software Mobile.pdf" target="_blank"><span>Ver</span></a></li>
                 </ul>
             </article>
-            <article id="dicasInfo">
-			    <fieldset id="caixaDicas">
-				    <h1 id="titleDicas">Dicas</h1>
-				    <ul id="uDicas">
-					    <li><h1>Saber o próprio número, ligue:</h1> 0800 643 0424</li>
-					    <li><h1>Observação sobre iOS 11</h1>O Youtube requer o iOS 11.0 ou posterior, assim como diversas outras aplicações da Google</li>
-					    <li><h1>Quando devo Formatar?</h1> Quase sempre, em situações muito críticas, será necessário realizar a formatação do computador. Casos como infestações de vírus, sequestro de dados ou Tela Azul, são alguns exemplos.</li>
-				    </ul>
-			    </fieldset>
-            </article>
-	        <article id="indique1Pgm"><h2>Indique um Programa</h2>
-				    <button onclick="envPg()" id="whats2">Enviar Programa</button>
-			    </fieldset>
-             </article>
 	</div>
 	
+
+
 
     <script type="text/javascript">
 
   		function subWhats() {
- 		var gerarUrl = document.getElementById("entraNum").value
+		var gerarUrl = document.getElementById("entraNum").value
  		var mesgOpc = document.getElementById("msgOpc").value
- 		var vaurlPta = "https://api.whatsapp.com/send?phone=55" + gerarUrl + '&text=' + mesgOpc;
- 		window.open(vaurlPta);
-      }
-      
+		var vaurlPta = "https://api.whatsapp.com/send?phone=55" + gerarUrl + '&text=' + mesgOpc;
+		if(gerarUrl == ''){
+			alert(`Número inválido!`)
+		}else(window.open(vaurlPta))
+	  }
     src="https://code.jquery.com/jquery-3.2.1.min.js"
 	$(function(){
 		$("#entraNum").click(function(){
