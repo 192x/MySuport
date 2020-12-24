@@ -1,0 +1,170 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    background-color:#ddd;
+}
+/*cabecalho + cont principal*/
+#scorpions{
+    display: block;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+#cabecalho{
+    display:block;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color:#33278D;
+    top: 0;
+    font-size:100%;
+}
+#cabecalho h1{
+    color: #02FAFD;
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+#contra{
+    display: block;
+    position: relative;
+    width: 100%;
+    top: 0;
+    visibility: hidden;
+    font-size: 100%;
+}
+#contra h1{
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+#entraNum{
+    position: relative;
+    border: none;
+    width: 20%;
+    font-size: 100%;
+    height: 22px;
+    padding: 3px;
+    vertical-align: middle;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+#msgOpc{
+    position: relative;
+    border: none;
+    width: 50%;
+    font-size: 100%;
+    height: 22px;
+    padding: 3px;
+    vertical-align: middle;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+#whats{
+    position: relative;
+    border: none;
+    width: 15%;
+    font-size: 85%;
+    min-width: 148px;
+    height: 28px;
+    vertical-align: middle;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-weight: bolder;
+    color: #33278D;
+    background-color: #02FAFD;
+}
+/*subMenu*/
+#subMenu{
+    display: block;
+    position: relative;
+    background-color:#33278D;
+    top: 10px;
+    padding:10px;
+    text-align: center;
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
+#subMenu h2{
+    font-family: sans-serif;
+    font-size: 110%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-bottom: 5px;
+}
+#caixaSub{
+    border: none;
+}
+#contPrinc{
+    display: block;
+    width: 100%;
+    position: relative;
+    border-radius: 8px;
+}
+#listPgms{
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    top: 5px;
+    background-color:rgba(0, 0, 0, 0.275);
+    border-radius: 8px;
+}
+#ulistPgms{
+    display: flex;
+    flex-wrap: wrap;
+}
+#ulistPgms li{
+    flex: 1 1 200px;
+    border: 2px solid rgb(49, 49, 49);
+    text-align: center;
+    margin: 5px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    padding-top: 5px;
+    color:rgb(49, 49, 49);
+    background-color:#0000003a;
+}
+#ulistPgms li span{
+    position: relative;
+    display: block;
+    width: 100%;
+    background-color:rgb(49, 49, 49);
+    color:white;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+a{
+    text-decoration: none;
+}
+/*dicasssssssssssss s s s ssssssssssssssssss*/
+#dicasInfo{
+    width: 100%;
+    display: block;
+    position: relative;
+}
+#caixaDicas{
+    border: none;
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    top: 5px;
+    background-color:#33278D;
+    border-radius: 8px;
+    top: 16px;
+}
+#titleDicas{
+    text-align: center;
+    font-size: 150%;
+}
