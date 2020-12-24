@@ -1,304 +1,90 @@
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
 	<title>X-Tools</title>
 	<link rel="shortcut icon" href="icon.png" >
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style type="text/css">
-		*{
-			margin: 0;
-			padding: 0;
-		}
-		body{
-			background: #33278D;
-			width: 100%;
-			height: 100%;
-		}
-		.cont{
-			background-color: white;
-			position: relative;
-			display: block;
-			width: 70%;
-			height: auto;
-			margin: 0 auto;
-			top: 20px;
-			border-radius: 10px;
-			box-shadow: 1px 2px 12px rgba(0,0,0, .5);
-		}
-		.cont ul{
-			position: relative;
-			display: block;
-			background-color:white;
-			padding: .5%;
-			clear: both;
-		}
-		li{
-			border: 1px rgba(0,0,0, .2) solid;
-			position: relative;
-			display: block;
-			width: auto;
-			height: auto;
-			padding: .5%;
-			margin: .5%;
-			border-radius: 8px;
-			background-color:rgba(0,0,0, .04);
-			min-width: 30%;font-family: Arial, sans-serif;
-			color: #33278D;
-
-		}
-		a{
-			color: black;font-family: Arial, sans-serif;
-			color: rgba(0,0,0, .7);
-			text-decoration: none;
-		}
-
-		span{
-			position: relative;
-   			 display: block;
-   			 float: right;
-   			 width: auto;
-   			 border: 1px rgba(0,0,0, .2) solid;
-   			 text-align: center;
-   			 font-size: 0.9em;
-   			 padding: 0% 2.5% 0% 2.5%;
-   			 background-color: #33278D;
-   			 border-radius: 5px;
-    			cursor: pointer;
-   			 color: #02FAFD;
-		}
-		fieldset{
-			position: relative;
-   			 display: block;
-   			 width: 70%;
-   			 background-color: white;
-   			 margin: 0 auto;
-   			 text-align: center;
-   			 border-radius: 10px;
-   			 height: auto;
-   			 border: none;
-   			 top: 8px;
-		}
-		fieldset input{
-			position: relative;
-			display: inline-block;
-			border-radius: 5px;
-			height: 30px;
-			text-align: center;
-			margin: .8%;
-			border: 2px rgba(0,0,0, .3) solid;
-		}
-		#urlPta{
-			width: 40%;
-		}
-		#whats{
-			position: relative;
-    		display: inline-block;
-    		border-radius: 6px;
-    		height: 32px;
-   			text-align: center;
-   			margin: .8%;
-   			border: 2px rgba(0,0,0, .3) solid;
-   			width: auto;
-   			padding: .8%;
-   			font-family: futura BK BT black;
-   			color: #02FAFD;
-   			background-color: #33278D;
-  			border: none;
-		}
-		fieldset legend{
-			width: auto;
-    		font-family: futura BK BT black;
-    		color:#33278D;
-   			background-color: white;
-    		border-radius: 8px;
-    		border: none;
-    		padding: 0px 7px;
-		}
-		.eu{
-			position: absolute;
-			display: block;
-			width: 10.5%;
-			height: auto;
-			background-color: white;
-			padding: 10px;
-			text-align: center;
-			border-radius: 10px;
-			top: 1.9%;
-			box-shadow: 1px 2px 12px rgba(0,0,0, .5);
-		}
-		.eu img{
-			position: relative;
-			display: block;
-			width: 100%;
-			box-shadow: 1px 2px 12px rgba(0,0,0, .5);
-			border-radius: 50%;
-		}
-		#nome{
-			position: relative;
-			display: block;
-			font-family: futura BK BT black;
-			color: rgba(0,0,0, .7);
-			margin: 1.9%;
-		}
-		body div{
-    	 	position: relative;
-    		 display: block;
-    		 background-color: transparent;
-   			 margin-top: 30px;
-    		 width: 100%;
-        	 height: auto;
-
-		}
-		div li{
-			background-color: white;
-		}
-		.a001{
-			margin-top: 20px
-		}
-		
-		.a001 li{
-			font-size: 80%;
-		}
-		.alex{
-			position:relative;
-			display:block;
-			text-align: center;
-			color: #02FAFD;
-			width: auto;
-			padding: 5px;
-			padding-bottom: 20px;
-		}
-		.alex a{
-			color: #02FAFD;
-			font-size: 100%;
-		}
-
-		.caixa2{
-			position: relative;
-			display: block;
-			top: 20px;
-		}
-		#entraPgm{
-			position: relative;
-			display: inline-block;
-			width: 70%;
-		}
-		#whats2{
-			 position: relative;
-    		 display: inline-block;
-    		 border-radius: 6px;
-    		 height: 32px;
-   			 text-align: center;
-   			 margin: .8%;
-   			 border: 2px rgba(0,0,0, .3) solid;
-   			 width: auto;
-   			 padding: .8%;
-   			 font-family: futura BK BT black;
-   			 color: #02FAFD;
-   			 background-color: #33278D;
-  			 border: none;
-		}
-		#msgOpc{
-			width: 35%;
-		}
-		.dics h1{
-			font-size: 15pt;
-			color: #6D66D8;
-		}
-	</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<hgroup class="caixa">
-			<fieldset class="caixa"> <legend>Gere seu link para um contato whatsapp</legend>
+    <div id="contra"><h1>X-Tools</h1></div>
+    <header id='cabecalho'><h1>X-Tools</h1></header>
+    <div id="scorpions">
+	    <hgroup id='subMenu'>
+		    <fieldset id="caixaSub">
+                <legend id="titleSub"><h2>Gere seu link para um contato whatsapp</h2></legend>
 				<input type="text" id="entraNum" placeholder="(00)0 0000-0000">
 				<input type="text" id="msgOpc" placeholder="Mensagem opcional">
-				<button onclick="vai()" id="whats">Gere e abra seu link</button>
-			</fieldset>
-	</hgroup>
+				<button onclick="subWhats()" id="whats">Gere e abra seu link</button>
+		    </fieldset>
+	    </hgroup>
+	    <section id="contPrinc">
+            <article id="listPgms">
+		        <ul id="ulistPgms">
+			        <li>Corel Draw X8 +Crack<a href="https://drive.google.com/uc?id=1t-huZsyxo1anvO4XBfBBQwU-JrlKQjrP&export=download"target="_blank"><span>Download</span></a></li>           
+			        <li>Office 19 + Crack<a href="https://drive.google.com/file/d/10tdRjU2CvutgmIehRlUYIKH0kTQQjum6/view?usp=sharing"target="_blank"><span>Download</span></a></li>                 
+			        <li>Office 2010 +Crack<a href="seu.cu" target="_blank"><span>Download</span></a> </li>      
+			        <li>Winrar<a href="https://www.rarlab.com/rar/winrar-x64-580br.exe"target="_blank"><span>Download</span></a></li>                           
+			        <li>Chrome<a href=""target="_blank"> <span>Download</span></a></li>                         
+			        <li>Firefox<a href="https://mega.nz/file/HPA21AQD#f4iaf_GgqMzQbVx1tHGCvd8cBeg3J-KaQvnJoVl4m_U"target="_blank"><span>Download</span></a></li>                        
+			        <li>Nero 7<a href="https://mega.nz/file/LfICBCqQ#MQdKyMDpEP5_WpN2tRM8NvxjnKnWRr5CicC1Q-E_kF0"target="_blank"><span>Download</span></a></li>                           
+			        <li>Reload Ativador<a href="https://mega.nz/file/TTBxlIJL#DrTRTjF43vW64HzJOMhYEl6gfdud3Pi5lhHWQpLFJZU"target="_blank"><span>Download</span></a></li>                      
+			        <li>Rufus<a href="https://mega.nz/file/ObBiXAQS#iaQ-x_I5wEplBJ_EMn6V4L6rdWS1GXww0kvXwxngnJo"target="_blank"><span>Download</span></a></li>                      
+			        <li>HW monitor<a href="http://download.cpuid.com/hwmonitor/hwmonitor_1.41.zip"target="_blank"><span>Download</span></a></li>                      
+		    	    <li>HD sentinel<a href="https://www.harddisksentinel.com/hdsentinel_setup.zip"target="_blank"><span>Download</span></a></li>                      
+		    	    <li>TeamView<a href="https://mega.nz/file/mKR2DSKI#I5iDW5yGF1eqeGbkVVvV5nij6P-2pfPedrbXZOZ-pAY"target="_blank"><span>Download</span></a></li>                      
+                    <li>VMware virtual machine<a href="https://mega.nz/file/iKYwjSBa#c3rE6FbgxCU42JvxDBrbkeU1UkWCTXu0jUSDcvahUDQ"target="_blank"><span>Download</span></a></li>                         
+                    <li>Photoscap<a href="https://mega.nz/file/uLIUEKrA#cbv0JYtXawFfeUIAbFivf1sUnr4qFTzo8FkC-6Jx0qM"target="_blank"><span>Download</span></a></li>                      
+                    <li>Panda Dome Free<a href="https://mega.nz/file/jHRyHaTS#aHfCr6FH0_dq7QZcuPuULPlTAc8qB8-PfxXjY1LW6BI"target="_blank"><span>Download</span></a></li>                      
+                    <li>Itools 4.4<a href="https://mega.nz/file/GOQAxARC#_4P4xXoHVd3Da3WPZK-xcaYNPTNv8dkN_zCPIayF-0E"target="_blank"><span>Download</span></a></li>                      
+                    <li>itools 3.4<a href="https://mega.nz/file/eCAQVa6Z#fLxynjp6D7uW-7FTL3w5e2pyblBDY_OD9U-7OpT9bfg"target="_blank"><span>Download</span></a></li>                      
+                    <li>FPS monitor<a href="https://mega.nz/file/SKYUUCyb#9cwS9sTQDE2HTt4TqTv8A-JyhzuCLjw0BRsqpDwaggc"target="_blank"><span>Download</span></a></li>                       
+                    <li>Daemon Tools<a href="https://mega.nz/file/uaQUHKTR#rrVnefW7YyJNIrCb_XTiS3MaYRNU0QVkyr7TF8QrQZA"target="_blank"><span>Download</span></a></li>                      
+                    <li>Utorrent<a href="https://mega.nz/file/uOJUVKLZ#TSXrKIBo78eQNTEuF_fge9nuGmO4KP6KLnzakcQDBCI"target="_blank"><span>Download</span></a></li>              
+                    <li>Allavsoft +Crack<a href="https://mega.nz/folder/CToH1AYQ#sSIdGB6vgDnynEbNGD1cgQ"target="_blank"><span>Download</span></a></li>
+                    <li>Removedor do Office<a href="remover.bat"target="_blank"><span>Download</span></a></li>
+	   		        <li>Consultar IMEI<a href="https://www.consultaaparelhoimpedido.com.br/public-web/welcome"target="_blank"><span>Download</span></a></li>
+	    	        <li>Unloock Wind User<a href="https://drive.google.com/u/0/uc?export=download&confirm=lurs&id=1owJ1B1owZZyY5aZRw0uGQW8Cw-9BkRwz"target="_blank"><span>Download</span></a></li>
+	   	 	        <li>ISO's Linux<a href="https://linuxtracker.org/index.php"target="_blank"><span>Download</span></a></li>
+	    	        <li>VEGAS PRO 17<a href="http://download2345.mediafire.com/cxbdpgi9c5pg/3urj7zxdhm1me8r/VEGAS+PRO+17.0.0.284.rar"target="_blank"><span>Download</span></a></li>
+			        <li>ISO - Linux Mint-20<a href="https://drive.google.com/u/0/uc?export=download&confirm=e2mq&id=1k7HTrOECOoWq3AXTcoVNKuWNS9CyR_mI"target="_blank"><span>Download</span></a></li>
+			         <li>ISO - Windows 7<a href="http://download2324.mediafire.com/baxdoou72vbg/3gsde1ehlr281bt/Win7_Ult_SP1_BrazilianPortuguese_x64.iso" target="_blank"><span>Download</span></a></li>
+			        <li>Acrobat Reader<a href="Acrobat.exe" target="_blank"><span>Download</span></a></li>
+			        <li>Grand Therft Auto SA<a href="http://www.mediafire.com/file/zs0fi31mb2n6jhe/GTA_Sanandreas.rar/file" target="_blank"><span>Download</span></a></li>
+			        <li>Ativador Office 2010<a href="https://mega.nz/file/MTBmAYQL#cNljX8xqS74GezRZMLoQI6yqBsQ6iLVhhm1HBBAtxkw" target="_blank"><span>Download</span></a></li>
+			        <li>Office 2010<a href="off.rar" target="_blank"><span>Download</span></a></li>
+			        <li>iTunes<a href="https://support.apple.com/kb/DL1816?viewlocale=pt_BR&locale=pt_BR" target="_blank"><span>Download</span></a></li>
+			        <li>AutoCAD 2021 +Crack<a href="Esse engenheiro faz 5k em um dia - cobra 100pila kk.rar" target="_blank"><span>Download</span></a></li>
+			        <li>PDF - Formatação Mobile<a href="Software Mobile.pdf" target="_blank"><span>Ver</span></a></li>
+                </ul>
+            </article>
+            <article id="dicasInfo">
+			    <fieldset id="caixaDicas">
+				    <h1 id="titleDicas">Dicas</h1>
+				    <ul id="uDicas">
+					    <li><h1>Saber o próprio número, ligue:</h1> 0800 643 0424</li>
+					    <li><h1>Observação sobre iOS 11</h1>O Youtube requer o iOS 11.0 ou posterior, assim como diversas outras aplicações da Google</li>
+					    <li><h1>Quando devo Formatar?</h1> Quase sempre, em situações muito críticas, será necessário realizar a formatação do computador. Casos como infestações de vírus, sequestro de dados ou Tela Azul, são alguns exemplos.</li>
+				    </ul>
+			    </fieldset>
+            </article>
+	        <article id="indique1Pgm"><h2>Indique um Programa</h2>
+				    <button onclick="envPg()" id="whats2">Enviar Programa</button>
+			    </fieldset>
+             </article>
+	</div>
+	
 
-	<article class="cont">
-		<ul>
-			<li>Corel Draw X8 +Crack<a href="https://drive.google.com/uc?id=1t-huZsyxo1anvO4XBfBBQwU-JrlKQjrP&export=download"target="_blank"><span>Download</span></a></li>           
-			<li>Office 19 + Crack<a href="https://drive.google.com/file/d/10tdRjU2CvutgmIehRlUYIKH0kTQQjum6/view?usp=sharing"target="_blank"><span>Download</span></a></li>                 
-			<li>Office 2010 +Crack<a href="seu.cu" target="_blank"><span>Download</span></a> </li>      
-			<li>Winrar<a href="https://www.rarlab.com/rar/winrar-x64-580br.exe"target="_blank"><span>Download</span></a></li>                           
-			<li>Chrome<a href=""target="_blank"> <span>Download</span></a></li>                         
-			<li>Firefox<a href="https://mega.nz/file/HPA21AQD#f4iaf_GgqMzQbVx1tHGCvd8cBeg3J-KaQvnJoVl4m_U"target="_blank"><span>Download</span></a></li>                        
-			<li>Nero 7<a href="https://mega.nz/file/LfICBCqQ#MQdKyMDpEP5_WpN2tRM8NvxjnKnWRr5CicC1Q-E_kF0"target="_blank"><span>Download</span></a></li>                           
-			<li>Reload Ativador<a href="https://mega.nz/file/TTBxlIJL#DrTRTjF43vW64HzJOMhYEl6gfdud3Pi5lhHWQpLFJZU"target="_blank"><span>Download</span></a></li>                      
-			<li>Rufus<a href="https://mega.nz/file/ObBiXAQS#iaQ-x_I5wEplBJ_EMn6V4L6rdWS1GXww0kvXwxngnJo"target="_blank"><span>Download</span></a></li>                      
-			<li>HW monitor<a href="http://download.cpuid.com/hwmonitor/hwmonitor_1.41.zip"target="_blank"><span>Download</span></a></li>                      
-			<li>HD sentinel<a href="https://www.harddisksentinel.com/hdsentinel_setup.zip"target="_blank"><span>Download</span></a></li>                      
-			<li>TeamView<a href="https://mega.nz/file/mKR2DSKI#I5iDW5yGF1eqeGbkVVvV5nij6P-2pfPedrbXZOZ-pAY"target="_blank"><span>Download</span></a></li>                      
-            <li>VMware virtual machine<a href="https://mega.nz/file/iKYwjSBa#c3rE6FbgxCU42JvxDBrbkeU1UkWCTXu0jUSDcvahUDQ"target="_blank"><span>Download</span></a></li>                         
-            <li>Photoscap<a href="https://mega.nz/file/uLIUEKrA#cbv0JYtXawFfeUIAbFivf1sUnr4qFTzo8FkC-6Jx0qM"target="_blank"><span>Download</span></a></li>                      
-            <li>Panda Dome Free<a href="https://mega.nz/file/jHRyHaTS#aHfCr6FH0_dq7QZcuPuULPlTAc8qB8-PfxXjY1LW6BI"target="_blank"><span>Download</span></a></li>                      
-            <li>Itools 4.4<a href="https://mega.nz/file/GOQAxARC#_4P4xXoHVd3Da3WPZK-xcaYNPTNv8dkN_zCPIayF-0E"target="_blank"><span>Download</span></a></li>                      
-            <li>itools 3.4<a href="https://mega.nz/file/eCAQVa6Z#fLxynjp6D7uW-7FTL3w5e2pyblBDY_OD9U-7OpT9bfg"target="_blank"><span>Download</span></a></li>                      
-            <li>FPS monitor<a href="https://mega.nz/file/SKYUUCyb#9cwS9sTQDE2HTt4TqTv8A-JyhzuCLjw0BRsqpDwaggc"target="_blank"><span>Download</span></a></li>                       
-            <li>Daemon Tools<a href="https://mega.nz/file/uaQUHKTR#rrVnefW7YyJNIrCb_XTiS3MaYRNU0QVkyr7TF8QrQZA"target="_blank"><span>Download</span></a></li>                      
-            <li>Utorrent<a href="https://mega.nz/file/uOJUVKLZ#TSXrKIBo78eQNTEuF_fge9nuGmO4KP6KLnzakcQDBCI"target="_blank"><span>Download</span></a></li>              
-            <li>Allavsoft +Crack<a href="https://mega.nz/folder/CToH1AYQ#sSIdGB6vgDnynEbNGD1cgQ"target="_blank"><span>Download</span></a></li>
-            <li>Removedor do Office<a href="remover.bat"target="_blank"><span>Download</span></a></li>
-	   		<li>Consultar IMEI<a href="https://www.consultaaparelhoimpedido.com.br/public-web/welcome"target="_blank"><span>Download</span></a></li>
-	    	<li>Unloock Wind User<a href="https://drive.google.com/u/0/uc?export=download&confirm=lurs&id=1owJ1B1owZZyY5aZRw0uGQW8Cw-9BkRwz"target="_blank"><span>Download</span></a></li>
-	   	 	<li>ISO's Linux<a href="https://linuxtracker.org/index.php"target="_blank"><span>Download</span></a></li>
-	    	<li>VEGAS PRO 17<a href="http://download2345.mediafire.com/cxbdpgi9c5pg/3urj7zxdhm1me8r/VEGAS+PRO+17.0.0.284.rar"target="_blank"><span>Download</span></a></li>
-			<li>ISO - Linux Mint-20<a href="https://drive.google.com/u/0/uc?export=download&confirm=e2mq&id=1k7HTrOECOoWq3AXTcoVNKuWNS9CyR_mI"target="_blank"><span>Download</span></a></li>
-			<li>ISO - Windows 7<a href="http://download2324.mediafire.com/baxdoou72vbg/3gsde1ehlr281bt/Win7_Ult_SP1_BrazilianPortuguese_x64.iso" target="_blank"><span>Download</span></a></li>
-			<li>Acrobat Reader<a href="Acrobat.exe" target="_blank"><span>Download</span></a></li>
-			<li>Grand Therft Auto SA<a href="http://www.mediafire.com/file/zs0fi31mb2n6jhe/GTA_Sanandreas.rar/file" target="_blank"><span>Download</span></a></li>
-			<li>Ativador Office 2010<a href="https://mega.nz/file/MTBmAYQL#cNljX8xqS74GezRZMLoQI6yqBsQ6iLVhhm1HBBAtxkw" target="_blank"><span>Download</span></a></li>
-			<li>Office 2010<a href="off.rar" target="_blank"><span>Download</span></a></li>
-			<li>iTunes<a href="https://support.apple.com/kb/DL1816?viewlocale=pt_BR&locale=pt_BR" target="_blank"><span>Download</span></a></li>
-			<li>AutoCAD 2021 +Crack<a href="Esse engenheiro faz 5k em um dia - cobra 100pila kk.rar" target="_blank"><span>Download</span></a></li>
-			<li>PDF - Formatação Mobile<a href="Software Mobile.pdf" target="_blank"><span>Ver</span></a></li>
-		</ul>
-	</article>
-		<div class="dics">
-			<fieldset>
-				<legend>
-					Dicas
-				</legend>
-				<ul>
-					<li><h1>Saber o próprio número, ligue:</h1> 0800 643 0424</li>
-					<li><h1>Observação sobre iOS 11</h1>O Youtube requer o iOS 11.0 ou posterior, assim como diversas outras aplicações da Google</li>
-					<li><h1>Quando devo Formatar?</h1> Quase sempre, em situações muito críticas, será necessário realizar a formatação do computador. Casos como infestações de vírus, sequestro de dados ou Tela Azul, são alguns exemplos.</li>
-				</ul>
-			</fieldset>
-		</div>
+    <script type="text/javascript">
 
-
-
-	<article class="cont2">
-
-		<hgroup class='caixa2'>
-			<fieldset class="capPgm"> <legend>Indique um Programa</legend>
-				<input type="text" id="entraPgm" placeholder="Nome do Programa">
-				<button onclick="envPg()" id="whats2">Enviar Programa</button>
-			</fieldset>
-		</hgroup>
-
-	</article>
-
-
-	<script type="text/javascript">
-  		function vai() {
- 		var gerarUrl = document.getElementById("entraNum").value /*prompt('Qual o seu Telefone? Com DDD, krai');*/
+  		function subWhats() {
+ 		var gerarUrl = document.getElementById("entraNum").value
  		var mesgOpc = document.getElementById("msgOpc").value
  		var vaurlPta = "https://api.whatsapp.com/send?phone=55" + gerarUrl + '&text=' + mesgOpc;
  		window.open(vaurlPta);
-  	}
-	</script>
-
-
-
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
-	<script>
+      }
+      
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
 	$(function(){
 		$("#entraNum").click(function(){
 			$(this).select();
@@ -310,16 +96,13 @@
 			document.execCommand("copy");
 		})
 	})
-	</script>
-
-	<script type="text/javascript">
+    
 		function envPg() {
 			var pegaNome = document.getElementById('entraPgm').value
 			var montUrl = 'https://api.whatsapp.com/send?phone=5562982631109&text=' + pegaNome;
 			window.open(montUrl);
 		}
 
-	</script>
-	<div class="alex"><a href="https://www.instagram.com/allex_souza.r/" target="_blank">Desenvolvido por @allex_souza.r</a></div>
+    </script>
 </body>
 </html>
