@@ -1,216 +1,216 @@
 @charset "UTF-8";
-* {
-    margem: 0;
-    preenchimento: 0;
-    estilo de lista: nenhum;
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
-corpo{
-    cor de fundo: # ADA7C9;
-    largura: 100%;
-    altura: 100%;
+body{
+    background-color:#ADA7C9;
+    width: 100%;
+    height: 100%;
 }
-/ * cabecalho + cont principal --------- * /
-#scorpions {
-    display: bloco;
-    posição: relativa;
-    largura: 90%;
-    margem: 0 automático;
-    cor de fundo: transparente;
+/*cabecalho + cont principal ---------*/
+#scorpions{
+    display: block;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    background-color: transparent;
 }
-#cabecalho {
-    display: bloco;
-    posição: fixa;
-    índice z: 1;
-    largura: 100%;
-    cor de fundo: # 41337A;
-    topo: 0;
-    tamanho da fonte: 100%;
+#cabecalho{
+    display:block;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color:#41337A;
+    top: 0;
+    font-size:100%;
 }
-#cabecalho h1 {
-    cor: # 02FAFD;
-    família da fonte: sans-serif;
-    peso da fonte: mais negrito;
-    alinhamento de texto: centro;
-    largura: 100%;
-    altura: 100%;
-    cursor: menu de contexto;
+#cabecalho h1{
+    color: #02FAFD;
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    cursor:context-menu;
 }
 #contra{
-    display: bloco;
-    posição: relativa;
-    largura: 100%;
-    topo: 0;
-    visibilidade: oculto;
-    tamanho da fonte: 100%;
+    display: block;
+    position: relative;
+    width: 100%;
+    top: 0;
+    visibility: hidden;
+    font-size: 100%;
 }
-#contra h1 {
-    família da fonte: sans-serif;
-    peso da fonte: mais negrito;
-    alinhamento de texto: centro;
-    largura: 100%;
-    altura: 100%;
+#contra h1{
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    width: 100%;
+    height: 100%;
 }
-#whats: hover {
-    cor de fundo: # 02f9fdb8;
+#whats:hover{
+    background-color: #02f9fdb8;
 }
-#subMenu {
-    display: bloco;
-    posição: relativa;
-    cor de fundo: # 41337A;
-    topo: 10px;
-    preenchimento: 10px;
-    alinhamento de texto: centro;
-    margem inferior: 16px;
-    raio da borda: 8px;
+#subMenu{
+    display: block;
+    position: relative;
+    background-color:#41337A;
+    top: 10px;
+    padding:10px;
+    text-align: center;
+    margin-bottom: 16px;
+    border-radius: 8px;
 }
-#subMenu h2 {
-    família da fonte: sans-serif;
-    tamanho da fonte: 110%;
-    largura: 100%;
-    alinhamento de texto: centro;
-    cor branca;
+#subMenu h2{
+    font-family: sans-serif;
+    font-size: 110%;
+    width: 100%;
+    text-align: center;
+    color: white;
     margin-bottom: 5px;
-    cursor: menu de contexto;
+    cursor: context-menu;
 }
-#caixaSub {
-    posição: relativa;
+#caixaSub{
+    position: relative;
     display: flex;
     flex-wrap: wrap;
-    fronteira: nenhum;
+    border: none;
 }
-.tr1 {
-    display: bloco;
-    posição: relativa;
+.tr1{
+    display: block;
+    position: relative;
     flex: 1 1 60px;
-    fronteira: nenhum;
-    preenchimento: 2px;
-    alinhamento de texto: centro;
-    margem: 5px;
-    cor de fundo: branco;
-    peso da fonte: mais negrito;
-    enchimento: 1%;
-    raio da borda: 5px;
+    border: none;
+    padding: 2px;
+    text-align: center;
+    margin: 5px;
+    background-color: white;
+    font-weight: bolder;
+    padding: 1%;
+    border-radius: 5px;
 }
 
-#entraNum {
-    largura máxima: 30%;
+#entraNum{
+    max-width: 30%;
 }
-#msgOpc {
-    posição: relativa;
-    largura mínima: 50%;
+#msgOpc{
+    position: relative;
+    min-width: 50%;
 }
-#o que é{
-    largura mínima: 137px;
-    cor de fundo: # 02FAFD;
+#whats{
+    min-width: 137px;
+    background-color: #02FAFD;
 }
-/ * # caixaSub {
-    fronteira: nenhum;
-} * /
-#contPrinc {
-    display: bloco;
-    largura: 100%;
-    posição: relativa;
-    raio da borda: 8px;
+/*#caixaSub{
+    border: none;
+}*/
+#contPrinc{
+    display: block;
+    width: 100%;
+    position: relative;
+    border-radius: 8px;
 }
-#listPgms {
-    display: bloco;
-    posição: relativa;
-    largura: 100%;
-    margem: 0 auto 10px auto;
-    topo: 5px;
-    cor de fundo: branco;
-    raio da borda: 8px;
-    sombra da caixa: 1px 1px 5px rgba (0, 0, 0, .5);
+#listPgms{
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0 auto 10px auto;
+    top: 5px;
+    background-color:white;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
 }
-#ulistPgms {
+#ulistPgms{
     display: flex;
     flex-wrap: wrap;
 }
-#ulistPgms li {
+#ulistPgms li{
     flex: 1 1 230px;
-    borda: 2px sólido # 41337A;
-    alinhamento de texto: centro;
-    margem: 5px;
-    raio da borda: 5px;
-    família da fonte: sans-serif;
-    peso da fonte: mais negrito;
+    border: 2px solid #41337A;
+    text-align: center;
+    margin: 5px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-weight: bolder;
     padding-top: 5px;
-    cor: # 33278D;
-    cor de fundo: # 02FAFD;
+    color: #33278D;
+    background-color: #02FAFD ;
 }
-#ulistPgms li span {
-    posição: relativa;
-    display: bloco;
-    largura: 100%;
-    cor de fundo: # 41337A;
-    cor branca;
-    família da fonte: sans-serif;
-    peso da fonte: mais negrito;
-    tamanho da fonte: 100%;
+#ulistPgms li span{
+    position: relative;
+    display: block;
+    width: 100%;
+    background-color:#41337A;
+    color:white;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 100%;
 }
-#ulistPgms li span: hover {
-    cor de fundo: # 33278dc2;
-    tamanho da fonte: 102%;
+#ulistPgms li span:hover{
+    background-color: #33278dc2;
+    font-size: 102%;
 }
-uma{
-    decoração de texto: nenhum;
+a{
+    text-decoration: none;
 }
-.cods {
-    cor: # E03616;
+.cods{
+    color: #E03616;
 }
-#pgmsfree {
-    display: bloco;
-    posição: relativa;
-    largura: 100%;
-    alinhamento de texto: centro;
-    margem esquerda: 5px;
-    tamanho da fonte: 80%;
-    família da fonte: sans-serif;
-    cor: # E03616;
+#pgmsfree{
+    display: block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-left: 5px;
+    font-size: 80%;
+    font-family: sans-serif;
+    color: #E03616;
 }
-#ulistPgms h2 {
-    display: bloco;
-    posição: relativa;
-    largura: 100%;
-    família da fonte: sans-serif;
-    peso da fonte: mais negrito;
-    tamanho da fonte: 120%;
-    alinhamento de texto: centro;
-    margem superior: 8px;
-    cor: # 33278D;
+#ulistPgms h2{
+    display: block;
+    position: relative;
+    width: 100%;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 120%;
+    text-align: center;
+    margin-top: 8px;
+    color: #33278D;
 }
-/ * dicassssssssssssssssssssssssssssssss * /
-#dicasInfo {
-    largura: 100%;
-    display: bloco;
-    posição: relativa;
+/*dicassssssssssssssssssssssssssssssss*/
+#dicasInfo{
+    width: 100%;
+    display: block;
+    position: relative;
 }
-#caixaDicas {
-    fronteira: nenhum;
-    display: bloco;
-    posição: relativa;
-    largura: 100%;
-    margem: 0 automático;
-    topo: 5px;
-    cor de fundo: # 33278D;
-    raio da borda: 8px;
-    topo: 16px;
+#caixaDicas{
+    border: none;
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    top: 5px;
+    background-color:#33278D;
+    border-radius: 8px;
+    top: 16px;
 }
-#titleDicas {
-    alinhamento de texto: centro;
-    tamanho da fonte: 150%;
+#titleDicas{
+    text-align: center;
+    font-size: 150%;
 }
-#rodape {
-    cor de fundo: # 41337A;
-    display: bloco;
-    posição: relativa;
-    inferior: 0px;
-    topo: 6px;
+#rodape{
+    background-color: #41337A;
+    display: block;
+    position: relative;
+    bottom: 0px;
+    top: 6px;
 }
-#rodape h3 {
-    alinhamento de texto: centro;
-    cor branca;
-    família da fonte: sans-serif;
-    tamanho da fonte: 110%;
-    preenchimento: 5px;
+#rodape h3{
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: 110%;
+    padding: 5px;
 }
