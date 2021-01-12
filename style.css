@@ -193,8 +193,8 @@ a{
     font-weight: bolder;
     font-size: 18pt;
     text-align: center;
-    color: white;
-    background-color: #33278D;
+    color: #33278D;
+    background-color: white;
     border: 2px #33278D solid;
     width: 80%;
     margin: 8px auto;
