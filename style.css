@@ -185,21 +185,16 @@ a{
     font-family: sans-serif;
     color: #E03616;
 }
-#ulistPgms h2 {
-    display: block;
-    position: relative;
-    width: 100%;
-    font-family: arial black, sans-serif;
-    font-weight: bolder;
-    font-size: 18pt;
+#ulistPgms .titPgms {
+    flex: 1 1 100%;
+    border: 3px solid #33278D;
     text-align: center;
-    color: #33278D;
-    background-color: white;
-    border: 2px #33278D solid;
-    width: 80%;
-    margin: 8px auto;
+    margin: 15px 20px;
     border-radius: 8px;
-    padding: 4px;
+    font-family: Arial Black, sans-serif;
+    font-weight: bolder;
+    padding: 6px;
+    color: #33278D;
 }
 /*dicassssssssssssssssssssssssssssssss*/
 #dicasInfo{
