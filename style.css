@@ -46,9 +46,6 @@ body{
     width: 200px;
     margin: 10px auto 10px auto;
 }
-#whats:hover{
-    background-color: #02f9fdb8;
-}
 #subMenu1{
     display: block;
     position: relative;
@@ -107,13 +104,18 @@ body{
     position: relative;
     min-width: 50%;
 }
-#whats {
+#whats{
     min-width: 137px;
     background-color: #00eb84;
-    color: #33278dc2;
+    color: #33278D;
     font-weight: bolder;
     font-size: 11pt;
-    border: 2px solid #00eb84;
+    border: 2px solid #00c972;
+}
+#whats:hover{
+    background-color: #35ffa8f3;
+    border: 2px solid #00c972;
+    box-shadow: #00ff91b0 0px 0px 6px , #47ffafbd 0px 0px 3px;
 }
 /*#caixaSub{
     border: none;
@@ -162,13 +164,15 @@ body{
     font-weight: bolder;
     font-size: 100%;
     box-shadow: 1px 1px 3px #41337A;
+    border: 2px solid #00c972;
 }
 
 #ulistPgms li span:hover {
-    background-color: #33278dc2;
-    font-size: 102%;
-    color: white;
+    background-color: #35ffa8f3;
+    border: 2px solid #35ffa8f3;
+    box-shadow: #00ff91b0 0px 0px 7px , #47ffafbd 0px 0px 3px;
 }
+
 a{
     text-decoration: none;
 }
@@ -232,3 +236,8 @@ a{
     font-size: 110%;
     padding: 5px;
 }
+@media only screen and (min-width: 680px) {
+    #ulistPgms .titPgms {
+        font-size: 160%;
+    }
+  }
