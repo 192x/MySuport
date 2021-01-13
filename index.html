@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,6 +9,7 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<div id="hellowf"><h1>Olá, Seja bem vindo!<br><span>Ctrl + F, para pesquisar programa na página. <span id="fecharf" onclick="fecharff()">x</span> </span></h1></div>
     <div id="contra"><img src="logo.3.0.png" alt=""></div>
     <header id='cabecalho'><img src="logo.3.0.png" alt=""></header>
     <div id="scorpions">
@@ -43,8 +45,6 @@
 	    	        <li>VEGAS PRO 17<a href="http://download2345.mediafire.com/cxbdpgi9c5pg/3urj7zxdhm1me8r/VEGAS+PRO+17.0.0.284.rar"target="_blank"><span>Download</span></a></li>
 			        <li>Office 2010<a href="off.rar" target="_blank"><span>Download</span></a></li>
 			        <li>AutoCAD 2021 +Crack<a href="Esse engenheiro faz 5k em um dia - cobra 100pila kk.rar" target="_blank"><span>Download</span></a></li>
-				<li>K-Lite Codec Pack<a href="https://dw.uptodown.com/dwn/omWK-9c1gkRVptmNwX2JXZJPNG7Uo547ln-XNSnR9gsG9VO8VF_brsK7BpWxpFmJrqiqV8vGHESnrkQ9fH9Tty5RUkTje-tgVUtXFLnljh3x95Ps0IN2-w6WHW4dLGz3/wMQodh9y1XE6hlreI5-XzQvfas_V-XTShi-mSV4ETFUwzbt7dBB2KDPx03GdVqSfIEEodziI1rnQ48smlilHrwSmB2N2V7-PaWrYqS2ugMq_9S8sZVBByYnesPXM1qpe/Ka5-cy_ixC6kuMTiWovHFZWngzTsbE-nDsGkCNDWB-rTMq3gwlZ37rFhH3o0CCNHBIWr6hxhzLEcfEFUcl_1rpX5PjDUalXubU9AeajlnH8=/" target="_blank"><span>Download</span></a></li>
-				<li>HD-Macrium Reflect 7F<a href="ReflectDLHF.exe" target="_blank"><span>Download</span></a></li>
                 </ul>
 			</article>
 			<article>
@@ -82,12 +82,25 @@
 		<h3><i> O sonho é o combustível dos vencedores!</i></h3>
 	</footer>
 
-    <script type="text/javascript">
-	    	window.setTimeout(oii,500);
-		function oii(){
-			alert('Testando!')
+	<script type="text/javascript">
+
+		var cxdiag = document.getElementById('hellowf')
+		window.setTimeout(abrir,3000);
+		function abrir(){
+			cxdiag.style.visibility = 'visible'
+		}
+		function fecharff(){
+			cxdiag.style.visibility = 'hidden'
 		}
 
+		/*var fecharDlg = document.getElementById('fecharf')
+		addEventListener(click,fecharDlg)
+
+		window.setTimeout(oii,3000);
+		function oii(){
+			document.getElementsById('fecharf').style.color= 'red'
+
+		}*/
   		function subWhats() {
 		var gerarUrl = document.getElementById("entraNum").value
  		var mesgOpc = document.getElementById("msgOpc").value
@@ -105,11 +118,6 @@
 			document.execCommand("copy");  /*Copiar o selecionado
 		})
 	})*/
-		function envPg() {
-			var pegaNome = document.getElementById('entraPgm').value
-			var montUrl = 'https://api.whatsapp.com/send?phone=5562982631109&text=' + pegaNome;
-			window.open(montUrl);
-		}
     </script>
 </body>
 </html>
