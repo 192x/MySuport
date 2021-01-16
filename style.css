@@ -7,15 +7,16 @@
 #hellowf{
     display: block;
     position: fixed;
-    z-index: 2;
+    z-index: 20;
+    top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.349);
+    background-color: rgba(0, 0, 0, 0.514);
     visibility: hidden;
 }
 #hellowf h1{
-    background-color: #00eb84;
-    color: #33278D;
+    background-color: rgba(255, 255, 255, 0.89);
+    color: #8c3596;
     width: 70%;
     font-family: Arial, sans-serif;
     font-weight: bolder;
@@ -27,8 +28,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    box-shadow: 0px 0px 9px #7affc5;
-    border: 2px solid #00c972;
+    box-shadow: 0px 0px 9px #8c3596;
+    border: 2px solid #8c3596;
 }
 #hellowf h1 span{
     font-size: 12pt;
@@ -57,7 +58,7 @@ body{
 #cabecalho{
     display:block;
     position: fixed;
-    z-index: 3;
+    z-index: 8;
     width: 100%;
     background-color:white;
     top: 0;
@@ -83,7 +84,24 @@ body{
     width: 200px;
     margin: 10px auto 10px auto;
 }
-/*Slide ------------------------------------------*/
+/* whatsCb ----------------------- */
+
+#whatsCb{
+    position: fixed;
+    top: 0;
+    left: 5%;
+    z-index: 10;
+    width: 40px;
+}
+#whatsCb img{
+    display: block;
+    position: relative;
+    width: 100%;
+    border-radius: 0px 8px 8px 8px;
+    top: 7px;
+}
+
+/*capa  ------------------------------------------*/
 
 #slideCp{
     width: 90%;
@@ -97,48 +115,42 @@ body{
     display: block;
     width: 100%;
     border-radius: 8px;
+    transition: linear 5s;
 }
 #slideCp::after{
     content:'';
     width: 100%;
     height: 100%;
-    background-color: rgba(128, 0, 255, 0.288);
+    background-color: rgba(100, 0, 201, 0.171);
     position: absolute;
     display: block;
     top: 0;
     border-radius: 8px;
 }
-/* Bts ----------------------------*/
-#contArt{
+#slideCp h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:800;
     position: absolute;
-    display: flex;
-    flex-wrap: nowrap;
-    background-color: transparent;
-    width: 100%;
-    height: 100%;
-    top: 0;
-}#contArt span{
-    position: absolute;
-    flex: 1 1 50px;
     top: 50%;
-    transform: translate(0,-50%);
-    z-index: 1;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+    color: white ;
+    font-size: 250%;
+    background-color:#8c3596c2 ;
+    border-radius: 8px;
+    text-align: center;
+    width: 80%;
+    max-width: 100%;
+    box-shadow: #00eb85c9 7px 7px 0px;
+    padding: 5px;
 }
-#rightb{
-    right: 1%;
-    width: 2%;
-    height: 10%;
-}
-#leftb{
-    left: 1%;
-    width: 2%;
-    height: 10%;
-}
+
 
 #subMenu{
     display: block;
     position: relative;
-    background-color:#41337A;
+    background-color:#41337a;
     top: 10px;
     padding:10px;
     text-align: center;
@@ -318,3 +330,8 @@ a{
         font-size: 160%;
     }
   }
+@media only screen and (max-width:600px){
+    #slideCp h1{
+        font-size: 100%;
+    }
+}
