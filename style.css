@@ -205,35 +205,86 @@ body{
     font-weight: bolder;
     font-size: 11pt;
     border: 2px solid #00c972;
+    cursor: pointer;
+}
+#whatsCp{
+    min-width: 137px;
+    background-color: #00eb84;
+    color: #33278D;
+    font-weight: bolder;
+    font-size: 11pt;
+    border: 2px solid #00c972;
+    cursor: pointer;
 }
 #whats:hover{
     background-color: #35ffa8f3;
     border: 2px solid #00c972;
     box-shadow: #00ff91b0 0px 0px 6px , #47ffafbd 0px 0px 3px;
 }
-#expGw{
-    background-color: rgba(247, 247, 247, 0.89);
-    color: #8c3596;
-    width: 70%;
-    font-family: Arial, sans-serif;
+#whatsCp:hover{
+    background-color: #35ffa8f3;
+    border: 2px solid #00c972;
+    box-shadow: #00ff91b0 0px 0px 6px , #47ffafbd 0px 0px 3px;
+}
+#tutoWh{
+    flex: 1 1 100%;
+}
+#urlPtaCp{
+    flex: 1 1 100%;
+    display: none;
+}
+#tutoWh{
+    padding-bottom: 20px;
+    background-color: #00eb85b4;
+    display: none;
+}
+#tutoWh ol {
+    display: flex;
+    display: block;
+    position: relative;
+    flex: 1 1 100%;
+}
+#tutoWh ol li{
+    flex: 1 1;
+    display: block;
+    padding: .2%;
+    font-family: sans-serif;
+    color: #353535ec;
+    cursor :default;
+}
+#tutoWh ol li h1{
     font-weight: bolder;
-    border-radius: 8px;
-    padding: 40px 20px;
+}
+
+#fexTutoW{
     position: absolute;
     display: block;
-    top: 300%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    box-shadow: 0px 0px 9px #8c3596;
-    border: 2px solid #8c3596;
-    z-index: 4;
+    width: 20px;
+    height: 20px;
+    right: 2px;
+    top: 2px;
+    cursor: pointer;
 }
-#expGw h1{
+#fexTutoW::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #353535ec;
+    width:23px;
+    height:5px;
+    transform: rotate(45deg);
+    margin-top: 5px;
 }
-#expGw p{
+#fexTutoW::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #353535ec;
+    width:23px;
+    height:5px;
+    transform: rotate(-45deg);
+    margin-top: 5px;
 }
-
-
 /*#ca1ixaSub{
     border: none;
 }*/
