@@ -17,7 +17,7 @@
 	</div>
 	<div id="slideCp">
 		<img id="locaImg" src="2.png">
-		<h1>Dicas & Programas gratuitos!</h1>
+		<h1>Dicas & Programas gratuitos!<img id="imgengp" src="e1.png"></h1>
 	</div>
     <div id="scorpions">
 	    <hgroup id='subMenu'>
@@ -87,6 +87,13 @@
 	</footer>
 
 	<script type="text/javascript">
+		var imgeng = document.getElementById('imgengp')
+		var deg = 20
+		window.setInterval(comecd,200)
+		function comecd(){
+			deg += 10
+			imgeng.style.transform='rotate('+ deg +'deg)'
+		}
 		var cxdiag = document.getElementById('hellowf')
 		window.setTimeout(abrir,3000);
 		function abrir(){
@@ -95,15 +102,6 @@
 		function fecharff(){
 			cxdiag.style.visibility = 'hidden'
 		}
-
-		/*var fecharDlg = document.getElementById('fecharf')
-		addEventListener(click,fecharDlg)
-
-		window.setTimeout(oii,3000);
-		function oii(){
-			document.getElementsById('fecharf').style.color= 'red'
-
-		}*/
   		function subWhats() {
 		var gerarUrl = document.getElementById("entraNum").value
  		var mesgOpc = document.getElementById("msgOpc").value
@@ -112,15 +110,6 @@
 			alert(`Número inválido!`)
 		}else(window.open(vaurlPta))
 	  }
-	
-	/* --!Selecionar todo o texto e um input e guardar na area de transferencia!-- 
-    src="https://code.jquery.com/jquery-3.2.1.min.js"
-	$(function(){
-		$("#urlPta").click(function(){ /*ID / Resposta ao Click / outra function
-			$(this).select()  /*Selecionar tudo
-			document.execCommand("copy");  /*Copiar o selecionado
-		})
-	})*/
     </script>
 </body>
 </html>
