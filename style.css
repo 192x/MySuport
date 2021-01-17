@@ -110,7 +110,7 @@ body{
     margin: 0 auto;
     margin-top: 22px; /*10px padrão, 22-10-2px*/
 }
-#slideCp img{
+#slideCp #locaImg{
     position: relative;
     display: block;
     width: 100%;
@@ -145,7 +145,6 @@ body{
     box-shadow: #00eb85c9 7px 7px 0px;
     padding: 5px;
 }
-
 #imgengp{
     position: relative;
     display: block;
@@ -153,7 +152,6 @@ body{
     margin: 0 auto;
 
 }
-
 #subMenu{
     display: block;
     position: relative;
@@ -213,7 +211,30 @@ body{
     border: 2px solid #00c972;
     box-shadow: #00ff91b0 0px 0px 6px , #47ffafbd 0px 0px 3px;
 }
-/*#caixaSub{
+#expGw{
+    background-color: rgba(247, 247, 247, 0.89);
+    color: #8c3596;
+    width: 70%;
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+    border-radius: 8px;
+    padding: 40px 20px;
+    position: absolute;
+    display: block;
+    top: 300%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 0px 9px #8c3596;
+    border: 2px solid #8c3596;
+    z-index: 4;
+}
+#expGw h1{
+}
+#expGw p{
+}
+
+
+/*#ca1ixaSub{
     border: none;
 }*/
 #contPrinc{
