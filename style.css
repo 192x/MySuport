@@ -146,6 +146,13 @@ body{
     padding: 5px;
 }
 
+#imgengp{
+    position: relative;
+    display: block;
+    width: 5%;
+    margin: 0 auto;
+
+}
 
 #subMenu{
     display: block;
