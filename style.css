@@ -235,7 +235,7 @@ body{
 }
 #tutoWh{
     padding-bottom: 20px;
-    background-color: #00eb85b4;
+    background-color: #ffffffb4;
     display: none;
 }
 #tutoWh ol {
@@ -251,6 +251,7 @@ body{
     font-family: sans-serif;
     color: #353535ec;
     cursor :default;
+    font-size: 10pt;
 }
 #tutoWh ol li h1{
     font-weight: bolder;
@@ -276,7 +277,7 @@ body{
     margin-top: 5px;
 }
 #fexTutoW::before{
-    content: '';
+    content:'';
     display: block;
     position: absolute;
     background-color: #353535ec;
@@ -407,6 +408,9 @@ a{
 @media only screen and (min-width: 680px) {
     #ulistPgms .titPgms {
         font-size: 160%;
+    }
+    #tutoWh ol li{
+        font-size: 12pt;
     }
   }
 @media only screen and (max-width:600px){
