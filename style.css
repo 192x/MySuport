@@ -34,14 +34,36 @@
 #hellowf h1 span{
     font-size: 12pt;
 }
+
 #fecharf{
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    right: 2px;
+    top: 2px;
+    cursor: pointer;
+    padding: 10px 5px;
+}
+#fecharf::after{
+    content: '';
     display: block;
     position: absolute;
-    top: 0px;
-    right: 5px;
-    color: #41337A;
-    cursor: pointer;
+    background-color: #353535ec;
+    width:23px;
+    height:2.5px;
+    transform: rotate(45deg);
 }
+#fecharf::before{
+    content:'';
+    display: block;
+    position: absolute;
+    background-color: #353535ec;
+    width:23px;
+    height:2.5px;
+    transform: rotate(-45deg);
+}
+
 body{
     background-color:rgb(24, 10, 41);
     width: 100%;
@@ -272,7 +294,7 @@ body{
     position: absolute;
     background-color: #353535ec;
     width:23px;
-    height:5px;
+    height:2.5px;
     transform: rotate(45deg);
     margin-top: 5px;
 }
@@ -282,7 +304,7 @@ body{
     position: absolute;
     background-color: #353535ec;
     width:23px;
-    height:5px;
+    height:2.5px;
     transform: rotate(-45deg);
     margin-top: 5px;
 }
@@ -305,11 +327,39 @@ body{
     border-radius: 8px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
 }
+#listPgms2{
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0 auto 10px auto;
+    top: 5px;
+    background-color:white;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+}
 #ulistPgms{
     display: flex;
     flex-wrap: wrap;
+    color:white;
+}
+#ulistPgms2{
+    display: flex;
+    flex-wrap: wrap;
+    color:white;
 }
 #ulistPgms li {
+    flex: 1 1 230px;
+    border: 3px solid #33278D;
+    text-align: center;
+    margin: 10px 20px;
+    border-radius: 8px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    padding-top: 5px;
+    color: white;
+    background-color: #33278D;
+}
+#ulistPgms2 li{
     flex: 1 1 230px;
     border: 3px solid #33278D;
     text-align: center;
@@ -335,13 +385,30 @@ body{
     box-shadow: 1px 1px 3px #41337A;
     border: 2px solid #00c972;
 }
-
+#ulistPgms2 li span{
+    position: relative;
+    display: block;
+    width: 80%;
+    margin: 5px auto;
+    border-radius: 6px;
+    background-color: #00eb84;
+    color: #41337A;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 100%;
+    box-shadow: 1px 1px 3px #41337A;
+    border: 2px solid #00c972;
+}
 #ulistPgms li span:hover {
     background-color: #35ffa8f3;
     border: 2px solid #35ffa8f3;
     box-shadow: #00ff91b0 0px 0px 7px , #47ffafbd 0px 0px 3px;
 }
-
+#ulistPgms2 li span:hover {
+    background-color: #35ffa8f3;
+    border: 2px solid #35ffa8f3;
+    box-shadow: #00ff91b0 0px 0px 7px , #47ffafbd 0px 0px 3px;
+}
 a{
     text-decoration: none;
 }
@@ -370,7 +437,65 @@ a{
     color: #33278D;
     background-color: white;
 }
+#ulistPgms2 .titPgms {
+    flex: 1 1 100%;
+    border: 3px solid #33278D;
+    text-align: center;
+    margin: 15px 20px;
+    border-radius: 8px;
+    font-family: Arial Black, sans-serif;
+    font-weight: bolder;
+    padding: 6px;
+    color: #33278D;
+    background-color: white;
+}
+/*Serviços--------------------------------------------*/
+#cxCata{
+    display: block;
+    background-color: white;
+    border-radius: 8px;
+    margin-top:16px;
+    padding-top: 5px;
+}
+#cxCata h1{
+    display: block;
+    border: 3px solid #33278D;
+    text-align: center;
+    margin: 15px 20px;
+    border-radius: 8px;
+    font-family: Arial Black, sans-serif;
+    font-weight: bolder;
+    padding: 6px;
+    color: #33278D;
+    background-color: white;
+}
+#cxServ{
+    display: flex;
+    flex-wrap:nowrap;
+    background-color: white;
+    width: 100%;
+    padding: 0 20px;
+}
+.serv{
+    background-color: #33278D;
+    color:white;
+    font-family: sans-serif, arial;
+    flex: 1 1 auto;
+    padding: 5px;
+    margin: 5px;
+}
+.serv h2{
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+.serv img{
+    width: 80%;
+}
+
+
 /*dicassssssssssssssssssssssssssssssss*/
+
 #dicasInfo{
     width: 100%;
     display: block;
@@ -392,7 +517,7 @@ a{
     font-size: 150%;
 }
 #rodape{
-    background-color: #41337A;
+    background-color: #8c35968c;
     display: block;
     position: relative;
     bottom: 0px;
@@ -407,6 +532,12 @@ a{
 }
 @media only screen and (min-width: 680px) {
     #ulistPgms .titPgms {
+        font-size: 160%;
+    }
+    #cxCata h1{
+        font-size: 160%;
+    }
+    #ulistPgms2 .titPgms {
         font-size: 160%;
     }
     #tutoWh ol li{
