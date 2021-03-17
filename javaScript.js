@@ -81,3 +81,6 @@ function cxvai(){
 function fechatutowh(){
     document.getElementById('tutoWh').style.display='none'
 }
+function alertButs(){
+    alert("Temporariamente indisponível...")
+}
