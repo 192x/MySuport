@@ -1,323 +1,96 @@
-@charset "UTF-8";
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-body{
-    background-color:rgb(24, 10, 41);
-    width: 100%;
-    height: 100%;
-}
-
-/*cabecalho + cont principal ---------*/
-
-#scorpions{
-    display: block;
-    position: relative;
-    width: 90%;
-    margin: 0 auto;
-    background-color: transparent;
-}
-#cabecalho{
-    display:block;
-    position: fixed;
-    z-index: 8;
-    width: 100%;
-    background-color:white;
-    top: 0;
-    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.371);
-    border-bottom: 3px solid #00eb84b0;
-}
-#cabecalho div h2{
-    font-family: -apple-system,Helvetica ,Helvetica,Arial,sans-serif;
-    font-size: 12pt;
-    font-weight:600;
-    color: rgba(0, 0, 0, 0.466);
-    text-align: center;
-    margin:0px auto 10px auto;
-}
-#contra div h2{
-    font-family: -apple-system,Helvetica ,Helvetica,Arial,sans-serif;
-    font-size: 12pt;
-    font-weight:500;
-    color: rgb(22, 22, 22);
-    text-align: center;
-    margin:0px auto 10px auto;
-}
-#cabecalho img{
-    position: relative;
-    display: block;
-    width: 200px;
-    margin: 10px auto 10px auto;
-}
-#contra{
-    display: block;
-    position: relative;
-    width: 100%;
-    top: 0;
-    visibility: hidden;
-}
-#contra img{
-    position: relative;
-    display: block;
-    width: 200px;
-    margin: 10px auto 10px auto;
-}
-/* whatsCb ----------------------- */
-
-#whatsCb{
-    position: fixed;
-    top: 0;
-    left: 5%;
-    z-index: 10;
-    width: 40px;
-}
-#whatsCb img{
-    display: block;
-    position: relative;
-    width: 100%;
-    border-radius: 0px 8px 8px 8px;
-    top: 7px;
-}
-/* Corpo + Prgramas ---------------------------------------------- */
-#contPrinc{
-    display: block;
-    width: 100%;
-    position: relative;
-    border-radius: 8px;
-}
-#listPgms{
-    display: block;
-    position: relative;
-    width: 100%;
-    margin: 0 auto 10px auto;
-    top: 5px;
-    background-color:white;
-    border-radius: 8px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
-}
-#listPgms2{
-    display: block;
-    position: relative;
-    width: 100%;
-    margin: 0 auto 10px auto;
-    top: 5px;
-    background-color:white;
-    border-radius: 8px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
-}
-#ulistPgms{
-    display: flex;
-    flex-wrap: wrap;
-    color:white;
-}
-#ulistPgms2{
-    display: flex;
-    flex-wrap: wrap;
-    color:white;
-}
-#ulistPgms li {
-    flex: 1 1 230px;
-    border: 3px solid #33278D;
-    text-align: center;
-    margin: 10px 20px;
-    border-radius: 8px;
-    font-family: sans-serif;
-    font-weight: bolder;
-    padding-top: 5px;
-    color: white;
-    background-color: #33278D;
-}
-#ulistPgms2 li{
-    flex: 1 1 230px;
-    border: 3px solid #33278D;
-    text-align: center;
-    margin: 10px 20px;
-    border-radius: 8px;
-    font-family: sans-serif;
-    font-weight: bolder;
-    padding-top: 5px;
-    color: white;
-    background-color: #33278D;
-}
-#ulistPgms li span {
-    position: relative;
-    display: block;
-    width: 80%;
-    margin: 5px auto;
-    border-radius: 6px;
-    background-color: #00eb84;
-    color: #41337A;
-    font-family: sans-serif;
-    font-weight: bolder;
-    font-size: 100%;
-    box-shadow: 1px 1px 3px #41337A;
-    border: 2px solid #00c972;
-}
-#ulistPgms2 li span{
-    position: relative;
-    display: block;
-    width: 80%;
-    margin: 5px auto;
-    border-radius: 6px;
-    background-color: #00eb84;
-    color: #41337A;
-    font-family: sans-serif;
-    font-weight: bolder;
-    font-size: 100%;
-    box-shadow: 1px 1px 3px #41337A;
-    border: 2px solid #00c972;
-}
-#ulistPgms li span:hover {
-    background-color: #35ffa8f3;
-    border: 2px solid #35ffa8f3;
-    box-shadow: #00ff91b0 0px 0px 7px , #47ffafbd 0px 0px 3px;
-}
-#ulistPgms2 li span:hover {
-    background-color: #35ffa8f3;
-    border: 2px solid #35ffa8f3;
-    box-shadow: #00ff91b0 0px 0px 7px , #47ffafbd 0px 0px 3px;
-}
-a{
-    text-decoration: none;
-}
-#ulistPgms .titPgms {
-    flex: 1 1 100%;
-    border: 3px solid #33278D;
-    text-align: center;
-    margin: 15px 20px;
-    border-radius: 8px;
-    font-family: Arial Black, sans-serif;
-    font-weight: bolder;
-    padding: 6px;
-    color: #33278D;
-    background-color: white;
-}
-#ulistPgms2 .titPgms {
-    flex: 1 1 100%;
-    border: 3px solid #33278D;
-    text-align: center;
-    margin: 15px 20px;
-    border-radius: 8px;
-    font-family: Arial Black, sans-serif;
-    font-weight: bolder;
-    padding: 6px;
-    color: #33278D;
-    background-color: white;
-}
-
-/* Media Query---------------------------------------------- */
-
-@media only screen and (min-width: 680px) {
-    #ulistPgms .titPgms {
-        font-size: 160%;
-    }
-    #cxCata h1{
-        font-size: 160%;
-    }
-    #ulistPgms2 .titPgms {
-        font-size: 160%;
-    }
-    #tutoWh ol li{
-        font-size: 12pt;
-    }
-  }
-@media only screen and (max-width:600px){
-    #slideCp h1{
-        font-size: 100%;
-    }
-}
-
-/* Nav serviços ---------------------------------------------- */
 
 
-#supRemoto ul{
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    background: rgb(131,58,180);
-    background: linear-gradient(45deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 87%, rgba(252,176,69,1) 106%);
-    border-radius: 0px 0px 8px 8px;
-    font-family: gadugi, sans-serif;
-    font-weight: 400;
-    margin: 0 auto 10px auto;
-}
-#supRemoto ul li{
-    display: block;
-    position: relative;
-    flex: 1 1 250px;
-    background-color: #f1f1f1;
-    padding: 10px;
-    margin-bottom: 5px;
-    margin: 10px;
-    border-radius: 5px;
-    color:#6e216d;
-    border: 2px solid #6e216d;
-}
-#supRemoto ul li h2{
-    text-align:left;
-}
-#supRemoto ul li p{
-    color: rgb(17, 17, 17);
-}
-#supRemoto button{
-    background-color: #00d679;
-    border: #00bb6a solid 2px;
-    margin: 5px auto 0 auto;
-    display: block;
-    padding: 2.5px 10px;
-    border-radius: 5px;
-    font-family: arial,sans-serif;
-    font-weight:bolder;
-    font-size: large;
-    color: white;
-    width: 100%;
-}
-#supRemoto .trtx{
-    width: 100%;
-    text-align: center;
-    color:rgb(26, 26, 26) ;
-    font-family: arial black, sans-serif;
-    font-size:20pt;
-    color: white;
-}
-/* rda pé -------------------------*/
-#idfooter{
-    background-color: white;
-    display: block;
-    position: relative;
-    width: 100%;
-    padding:15px 0;
-    z-index: 1;
-    top: 5px;
-}
-#idfooter h2, #idfooter  ul{
-    flex: 1 1 25%;
-    color: rgb(49, 49, 49);
-    font-family: Arial;
-    font-size: 80%;
-    list-style: none;
-    padding: 5px;
-}
-#idfooter h2{
-    text-align: center;
-}
-#idfooter  ul{
-    display: flex;
-    flex-wrap: nowrap;
-}
-#tels li{
-    flex: 1 1 30%;
-    background-color: #33278D;
-    border: 2px solid #2d2380;
-    padding: 2px;
-    color: white;
-    font-weight: bolder;
-    font-size: 100%;
-    text-align: center;
-    margin: 5px;
-    border-radius: 5px;
-}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Tools Online</title>
+	<link rel="shortcut icon" href="icon.png" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="contra"><img src="site.logo2.png" alt="">
+		<div>
+			<h2>Dicas, Tutoriais, Memes, Downloads de programas, e Assistência técnica...</h2>
+		</div>
+	</div>
+	<header id='cabecalho'><img src="site.logo2.png" alt="">
+		<div>
+			<h2>Dicas, Tutoriais, Memes, Downloads de programas, e Assistência técnica...</h2>
+		</div>
+	</header>
+    <div id="scorpions">
+		<article id="supRemoto">
+			<ul>
+				<li>
+					<!--<img src="tr1.png" alt="">-->
+					<div>
+						<h2 class="h2Servcs">Suporte Remoto</h2>
+						<p>Conectar remoto com um técnico e receber suporte sem sair de casa!
+						</p>
+						<button onclick="tapSaberm()">Agendar</button>
+					</div>
+				</li>
+				<li>
+					<!--<img src="tr2.png" alt="">-->
+					<div>
+						<h2>Visita Técnica</h2>
+						<p>Marcar um horário para receber um técnico em sua residência.</p>
+						<button onclick="tapSaberm()">Agendar</button>
+					</div>
+				</li>
+				<li>
+					<!--<img src="tr3.png" alt="">-->
+					<div>
+						<h2>Formatação</h2>
+						<p>Resolva lentidão, e outros problemas de sistema, com uma formatação.</p>
+						<button onclick="tapSaberm()">Agendar</button>
+					</div>
+				</li>
+			</ul>
+		</article>
+	    <section id="contPrinc">
+			<script src="javaScript.js"></script>
+            <article id="listPgms">
+		        <ul id='ulistPgms'>
+					<li class="titPgms">Programas para usuários</li>
+				</ul>
+			</article>
+			<article id="listPgms2">
+				<ul id="ulistPgms2">
+					<li class="titPgms">Programas para Técnicos</li>
+				</ul>
+			</article>
+			<article id="listPgms">
+				<ul id="ulistPgms">
+					<li class="titPgms">ISOs Windows e Linux</li>
+					<li>ISOs Linux<a href="https://linuxtracker.org/index.php"target="_blank"><span>Download</span></a></li>
+					<li>ISO - Linux Mint-20<a href="https://drive.google.com/u/0/uc?export=download&confirm=e2mq&id=1k7HTrOECOoWq3AXTcoVNKuWNS9CyR_mI"target="_blank"><span>Download</span></a></li>
+			    	<li>ISO - Windows 7 x64<a href="http://download2324.mediafire.com/baxdoou72vbg/3gsde1ehlr281bt/Win7_Ult_SP1_BrazilianPortuguese_x64.iso" target="_blank"><span>Download</span></a></li>
+					<li>ISO - Windows 7 x86<a href="" target="_blank"><span>Download</span></a></li>
+					<li>Ferramenta ISO - Wind10<a href="https://go.microsoft.com/fwlink/?LinkId=691209" target="_blank"><span>Download</span></a></li>
+				</ul>
+		</article>
+		<article id="listPgms">
+			<ul id="ulistPgms">
+				<li class="titPgms">Links úteis</li>
+				<li>Consultar IMEI na Anatel<a href="https://www.consultaaparelhoimpedido.com.br/public-web/home?cid=6582497"target="_blank"><span>Acessar</span></a></li>
+				<li>Saber Operadora pelo Número<a href="https://www.qualoperadora.net/"target="_blank"><span>Acessar</span></a></li>
+				<li>Saber próprio Número<span>0800 643 0424</span></li>
+			</ul>
+		</article>
+
+	</div>
+	<footer id="idfooter">
+        <h2>R. T-64, 1004 - 08 - St. Bueno, Goiânia - GO, 74230-110</h2>
+        <ul id="tels">
+            <li id="prim">62 995729868</li>
+            <li>62 982631109</li>
+            <!--<li id="ultm">4141-5578</li>-->
+        </ul>
+    </footer>
+	<script type="text/javascript">
+
+	</script>
+</body>
+</html>
