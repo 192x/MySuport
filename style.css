@@ -171,12 +171,12 @@ body{
     border: 2px solid #0080ffef;
 }
 #ulistPgms li span:hover {
-    background-color: #35ffa8f3;
+    background-color: #3296fa;
     border: 2px solid #35ffa8f3;
     box-shadow: #00ff91b0 0px 0px 7px , #47ffafbd 0px 0px 3px;
 }
 #ulistPgms2 li span:hover {
-    background-color: #35ffa8f3;
+    background-color: #3296fa;
     border: 2px solid #35ffa8f3;
     box-shadow: #00ff91b0 0px 0px 7px , #47ffafbd 0px 0px 3px;
 }
@@ -294,21 +294,33 @@ a{
 /* rda pé -------------------------*/
 #idfooter{
     background-color: rgb(80, 80, 80);
+    background-image: url(botttt.jpg);
     display: block;
     position: relative;
     width: 100%;
-    padding:15px 0;
     color: white;
     z-index: 1;
     top: 5px;
 }
-#idfooter h2, #idfooter  ul{
+#idfooter #fh21{
     flex: 1 1 25%;
     color: white;
+    background-color: rgba(0, 0, 0, 0.479);
     font-family: -apple-system,Helvetica ,Helvetica,Arial,sans-serif;
     font-size: 80%;
+    font-weight: 500;
     list-style: none;
-    padding: 5px;
+    padding: 15px 0 0  0;
+}
+#idfooter #fh22{
+    flex: 1 1 25%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.479);
+    font-family: -apple-system,Helvetica ,Helvetica,Arial,sans-serif;
+    font-size: 80%;
+    font-weight: 500;
+    list-style: none;
+    padding: 0 0 15px 0;
 }
 #idfooter h2{
     text-align: center;
@@ -347,4 +359,39 @@ a{
         margin:0px auto 10px auto;
     }
 
+}
+
+/*  memes  */
+
+#listmemes{
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0 auto 10px auto;
+    top: 5px;
+    background-color:white;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+    border: none;
+}
+#ulistmemes{
+        display: flex;
+        flex-wrap: wrap;
+        color:white;
+        border: none;
+}
+#ulistmemes li {
+    flex: 1 1 230px;
+    text-align: center;
+    margin: 10px 20px;
+    font-family: -apple-system,Helvetica ,Helvetica,Arial,sans-serif;
+    font-weight: bolder;
+    border: none;
+    padding-top: 5px;
+    color: white;
+}
+#ulistmemes li img{
+    position: relative;
+    width: 100%;
+    border: 2px solid rgba(116, 116, 116, 0.678);
 }
