@@ -28,7 +28,7 @@ body{
     background-color:white;
     top: 0;
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.371);
-    border-bottom: 3px solid #00eb84b0;
+    border-bottom: 3px solid #33278D;
 }
 #cabecalho div h2{
     font-family: -apple-system,Helvetica ,Helvetica,Arial,sans-serif;
@@ -148,13 +148,13 @@ body{
     width: 80%;
     margin: 5px auto;
     border-radius: 6px;
-    background-color: #00eb84;
-    color: #41337A;
+    background-color: #0080ff;
+    color: white;
     font-family: -apple-system,Helvetica ,Helvetica,Arial,sans-serif;
     font-weight: bolder;
     font-size: 100%;
     box-shadow: 1px 1px 3px #41337A;
-    border: 2px solid #00c972;
+    border: 2px solid #0080ff;
 }
 #ulistPgms2 li span{
     position: relative;
@@ -162,13 +162,13 @@ body{
     width: 80%;
     margin: 5px auto;
     border-radius: 6px;
-    background-color: #00eb84;
-    color: #41337A;
+    background-color: #0080ff;
+    color: white;
     font-family: -apple-system,Helvetica ,Helvetica,Arial,sans-serif;
     font-weight: bolder;
     font-size: 100%;
     box-shadow: 1px 1px 3px #41337A;
-    border: 2px solid #00c972;
+    border: 2px solid #0080ffef;
 }
 #ulistPgms li span:hover {
     background-color: #35ffa8f3;
@@ -185,10 +185,13 @@ a{
 }
 #ulistPgms .titPgms {
     flex: 1 1 100%;
-    border: 3px solid #33278D;
-    text-align: center;
+    border-bottom: 3px solid rgb(107, 106, 106);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    text-align: left;
+    border-radius: 0;
     margin: 15px 20px;
-    border-radius: 8px;
     font-family: -apple-system,Helvetica ,Helvetica,Arial,sans-serif;
     font-weight: bolder;
     padding: 6px;
@@ -197,10 +200,13 @@ a{
 }
 #ulistPgms2 .titPgms {
     flex: 1 1 100%;
-    border: 3px solid #33278D;
-    text-align: center;
+    text-align: left;
     margin: 15px 20px;
-    border-radius: 8px;
+    border-bottom: 3px solid rgb(107, 106, 106);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
     font-family: -apple-system,Helvetica ,Helvetica,Arial,sans-serif;
     font-weight: bolder;
     padding: 6px;
@@ -238,7 +244,7 @@ a{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    background:rgb(128, 128, 128);
+    background-color: rgb(209, 209, 209);
     border-radius: 0px 0px 8px 8px;
     font-family: -apple-system,Helvetica ,Helvetica,Arial,sans-serif;
     font-weight: 400;
@@ -248,23 +254,25 @@ a{
     display: block;
     position: relative;
     flex: 1 1 250px;
-    background-color: #f1f1f1;
+    background-color: rgba(255, 255, 255, 0.822);
     padding: 10px;
     margin-bottom: 5px;
     margin: 10px;
     border-radius: 5px;
     color:#6e216d;
-    border: 2px solid #6e216d;
+    border: 2px solid rgb(212, 212, 212);
 }
 #supRemoto ul li h2{
     text-align:left;
+    font-weight: 500;
+    color: rgb(49, 49, 49);
 }
 #supRemoto ul li p{
-    color: rgb(17, 17, 17);
+    color: rgb(68, 68, 68);
 }
 #supRemoto button{
-    background-color: #00d679;
-    border: #00bb6a solid 2px;
+    background-color: #0080ff;
+    border: #0077ED  solid 2px;
     margin: 5px auto 0 auto;
     display: block;
     padding: 2.5px 10px;
@@ -285,17 +293,18 @@ a{
 }
 /* rda pé -------------------------*/
 #idfooter{
-    background-color: white;
+    background-color: rgb(80, 80, 80);
     display: block;
     position: relative;
     width: 100%;
     padding:15px 0;
+    color: white;
     z-index: 1;
     top: 5px;
 }
 #idfooter h2, #idfooter  ul{
     flex: 1 1 25%;
-    color: rgb(49, 49, 49);
+    color: white;
     font-family: -apple-system,Helvetica ,Helvetica,Arial,sans-serif;
     font-size: 80%;
     list-style: none;
