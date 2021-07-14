@@ -30,6 +30,22 @@ body{
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.371);
     border-bottom: 3px solid #00eb84b0;
 }
+#cabecalho div h2{
+    font-family: -apple-system,Helvetica ,Helvetica,Arial,sans-serif;
+    font-size: 12pt;
+    font-weight:600;
+    color: rgba(0, 0, 0, 0.466);
+    text-align: center;
+    margin:0px auto 10px auto;
+}
+#contra div h2{
+    font-family: -apple-system,Helvetica ,Helvetica,Arial,sans-serif;
+    font-size: 12pt;
+    font-weight:500;
+    color: rgb(22, 22, 22);
+    text-align: center;
+    margin:0px auto 10px auto;
+}
 #cabecalho img{
     position: relative;
     display: block;
