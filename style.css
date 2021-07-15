@@ -408,7 +408,7 @@ a{
     display: block;
     height: 100%;
     opacity: 0;
-    transition: 2s;
+    transition: 1.5s;
 }
 #emdev #h2{
     background-color: rgb(255, 255, 255);
