@@ -358,7 +358,9 @@ a{
         text-align: center;
         margin:0px auto 10px auto;
     }
-
+    #emdev h2{
+        font-size: 12pt;
+    }
 }
 
 /*  memes  */
@@ -394,4 +396,79 @@ a{
     position: relative;
     width: 100%;
     border: 2px solid rgba(116, 116, 116, 0.678);
+}
+
+
+/*               em dev                   */
+#emdev{
+    background-color:rgba(0, 0, 0, 0.822);
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    display: block;
+    height: 100%;
+    opacity: 0;
+    transition: 2s;
+}
+#emdev #h2{
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 3px;
+    top: 50%;
+    display: block;
+    position: relative;
+    transform: translate(0,-100%);
+    color: rgb(59, 59, 59);
+    padding: 15px 10px;
+    font-family: -apple-system,Helvetica ,Helvetica,Arial,sans-serif;   
+}
+#emdev h2{
+    margin-bottom: 8px;
+}
+#sabx::after{ 
+    content: '';
+    display: block;
+    position: absolute;
+    width: 3.5px;
+    height: 17px;
+    transform: rotate(-45deg);
+    top: 5px;
+    background-color: red;
+    right: 10px;
+}
+#sabx::before{ 
+    content: '';
+    right: 10px;
+    display: block;
+    position: absolute;
+    width: 3.5px;
+    transform: rotate(45deg);
+    height: 17px;
+    top: 5px;
+    background-color: red;
+}
+#sabx{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: block;
+    z-index: 5;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+#buttemdev{
+    display: block;
+    border-radius: 3px;
+    background-color: #0080ff;
+    color: white;
+    margin-top: 10px 0 0 0;
+    padding: 1px 10px;
+    font-family: -apple-system,Helvetica ,Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-size: 13pt;
+    box-shadow: 1px 1px 3px #0000008e;
+    border: 2px solid #0079f1;
 }
