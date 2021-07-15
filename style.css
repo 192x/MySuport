@@ -344,7 +344,7 @@ a{
 @media only screen and (max-width: 565px) { 
     #cabecalho div h2{
         font-family: -apple-system,Helvetica ,Helvetica,Arial,sans-serif;
-        font-size: 10pt;
+        font-size: 8.5pt;
         font-weight:600;
         color: rgba(0, 0, 0, 0.466);
         text-align: center;
