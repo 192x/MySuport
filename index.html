@@ -3,22 +3,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>infoBR-GO | Alex Souza</title>
+	<title>My Tools Online</title>
 	<link rel="shortcut icon" href="icon.png" >
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<script>
+		window.setTimeout(vai,1500)
+		function vai(){
+			document.getElementById('emdev').style.opacity='1'
+		}
+		function fechadev(){
+			document.getElementById('emdev').style.opacity='0'
+		}
+	</script>
     <div id="contra"><img src="site.logo2.png" alt="">
 		<div>
-			<h2>Assistência técnica | Dicas, Tutoriais, e Downloads de programas...</h2>
+			<h2>Dicas, Tutoriais, Downloads de programas, e Assistência técnica...</h2>
 		</div>
 	</div>
 	<header id='cabecalho'><img src="site.logo2.png" alt="">
 		<div>
-			<h2>Dicas, Tutoriais, Downloads de programas, e Assistência técnica...</h2>
+			<h2>Dicas, Tutoriais, Memes, Downloads de programas, e Assistência técnica...</h2>
 		</div>
 	</header>
+
+	<div id="emdev">
+		<div id="h2">
+			<span onclick="fechadev()" id="sabx"></span>
+			<h2>
+				Em desenvolvimento... <br>
+				Se poder contribuir com alguma dica, ficarei muito agradecido...
+			</h2>
+			<button id="buttemdev">Enviar Mensagem</button>
+		</div>
+		
+	</div>
+
     <div id="scorpions">
 		<article id="supRemoto">
 			<ul>
@@ -80,7 +102,7 @@
 			</ul>
 		</article>
 
-		<!--<article id="listmemes">
+		<article id="listmemes">
 			<ul id="ulistmemes">
 				<li><img src="im1.png" alt=""></li>
 				<li><img src="im2.png" alt=""></li>
@@ -90,7 +112,6 @@
 				<li><img src="im1.png" alt=""></li>
 			</ul>
 		</article>
-		-->
 
 	</div>
 	<footer id="idfooter">
